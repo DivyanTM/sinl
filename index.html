@@ -58,7 +58,41 @@
 
     }
 </style>
-
+<style>
+  :root {
+      --sinl-gold: #379dd4;
+      --sinl-dark: #1a1a1a;
+      --sinl-light: #f8f9fa;
+  }
+  .hero-maritime {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                  url('https://sinl.onrender.com/assets/marine-bg.jpg');
+      background-size: cover;
+      background-position: center;
+  }
+  .tech-icon {
+      width: 60px;
+      height: 60px;
+      background-color: var(--sinl-gold);
+  }
+  .regulatory-badge {
+      height: 80px;
+      width: auto;
+      opacity: 0.8;
+      transition: all 0.3s;
+  }
+  .regulatory-badge:hover {
+      opacity: 1;
+      transform: scale(1.05);
+  }
+  .case-study-card {
+      border-left: 4px solid var(--sinl-gold);
+      transition: transform 0.3s;
+  }
+  .case-study-card:hover {
+      transform: translateY(-5px);
+  }
+</style>
 </head>
 
 <body class="index-page">
@@ -315,6 +349,68 @@
 
     </section><!-- /Services Section -->
 
+<!-- Core Technologies -->
+<section id="solutions" class="py-5 bg-light">
+  <div class="container py-4">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="fw-bold mb-3 utext" >Integrated Maritime Security Systems</h2>
+          <p class="text-muted mx-auto" style="max-width: 700px;">
+              Combining physical security with advanced information technologies for complete port protection
+          </p>
+      </div>
+
+      <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade" data-aos-delay="100">
+              <div class="p-4 text-center">
+                  <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM6.5 6a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                  </div>
+                  <h4 class="fw-semibold">AIS Integration</h4>
+                  <p class="text-muted">Automatic Identification System tracking for all vessel movements in port waters</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade" data-aos-delay="100">
+              <div class="p-4 text-center">
+                  <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                          <path d="M8 1a7 7 0 0 0-7 7v3h1.5a.5.5 0 0 1 0 1H1v2h1.5a.5.5 0 0 1 0 1H1v1.5a.5.5 0 0 1-1 0V15H0v-1.5a.5.5 0 0 1 .5-.5H15v-1h-1.5a.5.5 0 0 1 0-1H15V8h-1.5a.5.5 0 0 1 0-1H15V7a7 7 0 0 0-7-7z"/>
+                      </svg>
+                  </div>
+                  <h4 class="fw-semibold">Radar Surveillance</h4>
+                  <p class="text-muted">24/7 radar coverage of port perimeter and approach channels</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade" data-aos-delay="100">
+              <div class="p-4 text-center">
+                  <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                          <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                      </svg>
+                  </div>
+                  <h4 class="fw-semibold">Underwater Sensors</h4>
+                  <p class="text-muted">Sonar and tension monitoring for underwater intrusion detection</p>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade" data-aos-delay="100">
+              <div class="p-4 text-center">
+                  <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                      </svg>
+                  </div>
+                  <h4 class="fw-semibold">Access Control</h4>
+                  <p class="text-muted">Multi-layer security for port facilities and restricted areas</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
 
   </main>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINL - Maritime Security Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --sinl-gold: #d4af37;
+            --sinl-dark: #1a1a1a;
+            --sinl-light: #f8f9fa;
+        }
+        .hero-maritime {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://sinl.onrender.com/assets/marine-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .tech-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--sinl-gold);
+        }
+        .regulatory-badge {
+            height: 80px;
+            width: auto;
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+        .regulatory-badge:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        .case-study-card {
+            border-left: 4px solid var(--sinl-gold);
+            transition: transform 0.3s;
+        }
+        .case-study-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-maritime text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Maritime Security Solutions</h1>
+                    <p class="lead mb-4">Comprehensive port and vessel protection systems compliant with IMO, SOLAS and ISPS regulations</p>
+                    <a href="#solutions" class="btn btn-lg btn-outline-light">Explore Technologies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Technologies -->
+    <section id="solutions" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Integrated Maritime Security Systems</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Combining physical security with advanced information technologies for complete port protection
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center">
+                        <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM6.5 6a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold">AIS Integration</h4>
+                        <p class="text-muted">Automatic Identification System tracking for all vessel movements in port waters</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center">
+                        <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 1a7 7 0 0 0-7 7v3h1.5a.5.5 0 0 1 0 1H1v2h1.5a.5.5 0 0 1 0 1H1v1.5a.5.5 0 0 1-1 0V15H0v-1.5a.5.5 0 0 1 .5-.5H15v-1h-1.5a.5.5 0 0 1 0-1H15V8h-1.5a.5.5 0 0 1 0-1H15V7a7 7 0 0 0-7-7z"/>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold">Radar Surveillance</h4>
+                        <p class="text-muted">24/7 radar coverage of port perimeter and approach channels</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center">
+                        <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold">Underwater Sensors</h4>
+                        <p class="text-muted">Sonar and tension monitoring for underwater intrusion detection</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="p-4 text-center">
+                        <div class="tech-icon rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
+                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold">Access Control</h4>
+                        <p class="text-muted">Multi-layer security for port facilities and restricted areas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regulatory Compliance -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Compliant with International Standards</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Our systems meet all requirements of major maritime security regulations
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-6 col-md-3 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/IMO_logo.svg/1200px-IMO_logo.svg.png" alt="IMO" class="img-fluid regulatory-badge">
+                    <p class="mt-2 fw-semibold">IMO Regulations</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="https://www.marineinsight.com/wp-content/uploads/2019/08/SOLAS.png" alt="SOLAS" class="img-fluid regulatory-badge">
+                    <p class="mt-2 fw-semibold">SOLAS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <img src="https://www.safety4sea.com/wp-content/uploads/2018/01/ISPS-Code-1-1024x576.png" alt="ISPS" class="img-fluid regulatory-badge">
+                    <p class="mt-2 fw-semibold">ISPS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Global Port Security Implementations</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Proven solutions deployed at major international ports
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="h-100 p-4 bg-white case-study-card">
+                        <h4 class="fw-semibold text-uppercase" style="color: var(--sinl-gold);">Port of Ashdod, Israel</h4>
+                        <h5 class="mb-3">Comprehensive Port Security Upgrade</h5>
+                        <ul class="text-dark">
+                            <li>Integrated AIS vessel tracking system</li>
+                            <li>Perimeter radar surveillance network</li>
+                            <li>ISPS-compliant access control points</li>
+                        </ul>
+                        <a href="#" class="text-decoration-none fw-semibold" style="color: var(--sinl-gold);">Read Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="h-100 p-4 bg-white case-study-card">
+                        <h4 class="fw-semibold text-uppercase" style="color: var(--sinl-gold);">Port of Douala, Cameroon</h4>
+                        <h5 class="mb-3">Maritime Security Modernization</h5>
+                        <ul class="text-dark">
+                            <li>Command & Control center implementation</li>
+                            <li>Underwater intrusion detection system</li>
+                            <li>Security personnel training program</li>
+                        </ul>
+                        <a href="#" class="text-decoration-none fw-semibold" style="color: var(--sinl-gold);">Read Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-4 text-center">
+            <h2 class="fw-bold mb-4">Ready to Secure Your Port Facilities?</h2>
+            <p class="lead mb-4">Our maritime security experts will design a custom solution for your needs</p>
+            <a href="#" class="btn btn-lg btn-outline-light">Request Consultation</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
