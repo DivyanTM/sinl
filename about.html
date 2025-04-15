@@ -117,13 +117,12 @@
 <style>
   .panoramic-timeline {
     background: #f8fafc;
-    position: relative;
-    overflow: hidden;
   }
   
+  
+
   .timeline-panorama {
     min-height: 600px;
-    position: relative;
     padding: 80px 0;
   }
   
@@ -138,14 +137,14 @@
     z-index: 1;
   }
   
-  .timeline-connector {
+  /* .timeline-connector {
     position: absolute;
     background: #e5e7eb;
     height: 2px;
     z-index: 1;
-  }
+  } */
   
-  .timeline-connector.start-left.center-right {
+  /* .timeline-connector.start-left.center-right {
     top: 22%;
     left: 25%;
     width: 40%;
@@ -164,20 +163,20 @@
     left: 25%;
     width: 40%;
     transform: rotate(15deg);
-  }
+  } */
   
-  .timeline-item {
+  /* .timeline-item {
     position: absolute;
     width: 320px;
     z-index: 2;
     transition: all 0.4s ease;
-  }
+  } */
   
   .timeline-item:hover {
     z-index: 3;
   }
   
-  .start-left {
+  /* .start-left {
     top: 15%;
     left: 8%;
   }
@@ -195,15 +194,26 @@
   .center-left {
     bottom: 25%;
     left: 10%;
-  }
+  } */
   
+  @media (max-width: 768px) {
+    .timeline-card{
+      height: 200px !important;
+    }
+  }
+
+
+  
+
+
   .timeline-card {
     background: white;
     border-radius: 16px;
     padding: 30px;
     box-shadow: 0 12px 24px rgba(0,0,0,0.08);
     transition: all 0.4s ease;
-    position: relative;
+    /* position: relative; */
+    height: 370px !important;
     border: 1px solid rgba(0,0,0,0.05);
   }
   
@@ -252,18 +262,18 @@
   .bg-info { background: #06b6d4; }
   .bg-warning { background: #f59e0b; }
   
-  /* Responsive Behavior */
-  @media (max-width: 1200px) {
+ 
+  /* @media (max-width: 1200px) {
     .timeline-item {
-      width: 280px;
-    }
-    .start-left { left: 5%; }
+      width: 250px;
+    } */
+    /* .start-left { left: 5%; }
     .center-right { right: 5%; }
     .start-right { right: 5%; }
-    .center-left { left: 5%; }
-  }
+    .center-left { left: 5%; } */
+  /* } */
   
-  @media (max-width: 992px) {
+  /* @media (max-width: 992px) {
     .timeline-panorama {
       min-height: auto;
       padding: 40px 0;
@@ -282,7 +292,7 @@
     .timeline-connector {
       display: none;
     }
-  }
+  } */
 </style>
 
   <style>
@@ -354,7 +364,7 @@
 
       <a href="index.html" style="width: fit-content;">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/stampford_intl.png" class="w-75 w-xs" alt="stampford_intl logo">
+        <img src="assets/img/stampford_intl.png" class="w-50 w-xs" alt="stampford_intl logo">
         <!-- <h1 class="sitename">Vesperr</h1> -->
       </a>
 
@@ -388,10 +398,10 @@
       </nav>
 
       <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
-      <div class="mx-md-5 mx-xl-5 mx-3" style="font-family: 'Poppins', sans-serif;">
+      <!-- <div class="mx-md-5 mx-xl-5 mx-3" style="font-family: 'Poppins', sans-serif;">
         <p class="m-0 text-nowrap fs-xs fs-6 fs-md-5 fs-lg-4 fs-xl-3">Have any questions?</p>
         <p class="fw-bold text-light m-0 fs-xs fs-6 fs-md-5 fs-lg-4 fs-xl-3">+00 123 456 789</p>
-    </div>
+    </div> -->
     
     
     
@@ -556,7 +566,7 @@
               </p>
             </div>
             <div class="col-lg-6 text-center text-lg-end" data-aos="fade-right" data-aos-delay="100">
-              <img src="assets/img/banner_slider_3.png" alt="Mission" class="img-fluid rounded shadow-lg">
+              <img src="assets/img/team/banner6.JPG" alt="Mission" class="img-fluid rounded shadow-lg">
             </div>
           </div>
         </div>
@@ -605,18 +615,13 @@
         <div class="container-xxl px-4">
           <div class="text-center mb-6">
             <h2 class="display-5 fw-bold mb-3">Our Security Evolution</h2>
-            <p class="lead text-muted mx-auto" style="max-width: 700px;">A journey of excellence through decades of maritime security and industrial transformation.</p>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+              A journey of excellence through decades of maritime security and industrial transformation.
+            </p>
           </div>
       
-          <div class="timeline-panorama">
-           
-            <div class="timeline-wave"></div>
-            <div class="timeline-connector start-left center-right"></div>
-            <div class="timeline-connector center-right start-right"></div>
-            <div class="timeline-connector start-right center-left"></div>
-            
-            
-            <div class="timeline-item start-left" data-aos="fade-down" data-aos-delay="200">
+          <div class="p-md-5 p-2 row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+            <div class="col timeline-item start-left" data-aos="fade-down" data-aos-delay="200">
               <div class="timeline-card">
                 <div class="timeline-icon bg-primary">
                   <i class="bi bi-shield-check"></i>
@@ -628,9 +633,8 @@
                 </div>
               </div>
             </div>
-      
-            
-            <div class="timeline-item center-right" data-aos="fade-down" data-aos-delay="200">
+          
+            <div class="col timeline-item center-right" data-aos="fade-down" data-aos-delay="200">
               <div class="timeline-card">
                 <div class="timeline-icon bg-success">
                   <i class="bi bi-gear-wide-connected"></i>
@@ -642,9 +646,8 @@
                 </div>
               </div>
             </div>
-      
-            
-            <div class="timeline-item start-right" data-aos="fade-down" data-aos-delay="200">
+          
+            <div class="col timeline-item start-right" data-aos="fade-down" data-aos-delay="200">
               <div class="timeline-card">
                 <div class="timeline-icon bg-info">
                   <i class="bi bi-cpu"></i>
@@ -656,9 +659,8 @@
                 </div>
               </div>
             </div>
-      
-            
-            <div class="timeline-item center-left" data-aos="fade-down" data-aos-delay="200">
+          
+            <div class="col timeline-item center-left" data-aos="fade-down" data-aos-delay="200">
               <div class="timeline-card">
                 <div class="timeline-icon bg-warning">
                   <i class="bi bi-globe-americas"></i>
@@ -671,8 +673,10 @@
               </div>
             </div>
           </div>
+          
         </div>
       </section>
+      
       
 <section class="isps-framework py-5">
   <div class="container">
@@ -802,155 +806,198 @@
         <h2>Our Team</h2>
         <p>The People Who Make It Happen</p>
       </div><!-- End Section Title -->
+    
+
+      <style>
+        .team-img {
+          height: 300px;
+          width: 600px;
+          object-fit: cover;
+          border-radius: 10px; /* optional for rounded corners */
+        }
+      </style>
+      
+
 
       <div class="container">
-
-        <div class="row gy-4">
+         <div class="row d-flex justify-content-center gy-4 mb-5">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <img src="assets/img/team/ceo1.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
-                <h4>John Carter</h4>
+                <h4>Ran Harel</h4>
                 <span>Chief Executive Officer</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <img src="assets/img/team/Abiodun.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
-                <h4>Michael Smith</h4>
-                <span>Product Manager</span>
+                <h4>Abiodun</h4>
+                <!-- <span>Product Manager</span> -->
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <img src="assets/img/team/Charles.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/cheerful-indian-man.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>James Anderson</h4>
-                <span>Cheif Engineer</span>
+                <h4>Charles</h4>
+                <!-- <span>CTO</span> -->
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team8.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <img src="assets/img/team/Gbenga.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
-                <h4>David Johnson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-         
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="team-member">
-              <div class="member-img">
-                <img src="assets/img/team7.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Davis</h4>
-                <span>Marketing Head</span>
+                <h4>Gbenga</h4>
+                <!-- <span>Cheif Engineer</span> -->
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team6.jpg" class="img-fluid" alt="">
-                <div class="social">
+                <img src="assets/img/team/Kenneth.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
+                </div> -->
               </div>
               <div class="member-info">
-                <h4>Robert Brown</h4>
-                <span>UI/UX Designer</span>
+                <h4>Kanneth</h4>
+                <!-- <span>Accountant</span> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/Tunde - Ibraheen.jpg" class="img-fluid team-img" alt="">
+                <!-- <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> -->
+              </div>
+              <div class="member-info">
+                <h4>Tunde - Ibraheen</h4>
+                <!-- <span>Accountant</span> -->
               </div>
             </div>
           </div>
         </div>
+        
+     <div class="d-flex justify-content-center align-items-center">
+      <div class="p-3 rounded bg-light border shadow">
+        <!-- Bootstrap Carousel -->
+        <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner rounded border">
+            <!-- Slide 1 (Active) -->
+            <div class="carousel-item active">
+              <img src="assets/img/team1.jpg" class="d-block w-100 img-fluid" alt="Team meeting">
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="assets/img/team2.jpg" class="d-block w-100 img-fluid" alt="Business discussion">
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="assets/img/team3.jpg" class="d-block w-100 img-fluid" alt="Handshake deal">
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <img src="assets/img/team4.jpg" class="d-block w-100 img-fluid" alt="Handshake deal">
+          </div>
+        </div>
+          
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      .carousel-item {
+        transform: none !important;
+        transition: opacity 0.5s ease-in-out !important;
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+    
+      .carousel-item.active {
+        opacity: 1;
+        position: relative;
+      }
+    
+      .carousel-inner {
+        overflow: hidden;
+      }
+    
+      .carousel.fade .carousel-item {
+        transition: opacity 0.5s ease-in-out;
+      }
+    </style>
+
+      
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section>
 
 
  
@@ -984,11 +1031,11 @@
         <!-- Contact Section -->
         <div class="col-12 col-md-4">
           <h5 class="fw-bold">Contact Us</h5>
-          <p class="text-muted mb-1"><i class="bi bi-geo-alt"></i> 10A, Block B,</p>
-          <p class="text-muted mb-1 ps-3">Ilasamaja Industrial Estate,</p>
+          <p class="text-muted mb-1"><i class="bi bi-geo-alt"></i>110/114 Oshodi - Apapa Expressway,,</p>
           <p class="text-muted mb-1 ps-3">Isolo, Lagos, Nigeria</p>
+          <p class="text-muted mb-1 ps-3">100263</p>
 
-          <p class="text-muted mb-1"><i class="bi bi-telephone"></i> +91 98765 43210</p>
+          <p class="text-muted mb-1"><i class="bi bi-telephone"></i> +234 (0)90 8808 7849</p>
           <p class="text-muted"><i class="bi bi-envelope"></i>  info@stampfordnigeria.com</p>
         </div>
       </div>
