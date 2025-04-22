@@ -93,25 +93,31 @@
   <!-- Stampford Projects - Premium Modern Design -->
 <div class="container-fluid px-0">
   <!-- Hero Section -->
-  <div class="stampford-hero bg-dark text-white position-relative overflow-hidden">
+  <div class="stampford-hero text-white position-relative overflow-hidden" style="height: 100vh;">
+  
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit:fill; z-index: -1;">
+      <source src="assets/videos/v1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Content on top -->
     <div class="container py-8 py-lg-10 position-relative">
       <div class="row justify-content-center">
         <div class="col-lg-10 text-center" data-aos="fade" data-aos-delay="100">
-          <h1 class="display-3 fw-bold mb-4 text-white" >Stampford International</h1>
+          <h1 class="display-3 fw-bold mb-4 text-white">Stampford International</h1>
           <p class="lead mb-5 opacity-75">Global Maritime Security Solutions Since 1995</p>
           <div class="d-flex justify-content-center gap-3">
-            <a href="#solutions" class="btn btn-primary btn-lg px-4">Our Solutions</a>
+            <a href="#solutions" class="btn btn-dark btn-lg px-4">Our Solutions</a>
             <a href="#projects" class="btn btn-outline-light btn-lg px-4">Global Projects</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="position-absolute bottom-0 start-0 w-100">
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="text-white" style="height: 6rem;">
-        <path d="M1200 0L0 0 892.25 114.72 1200 0z" fill="currentColor"></path>
-      </svg>
-    </div> -->
+  
   </div>
+  
 
   
   
@@ -219,9 +225,18 @@
           </div>
         </div>
       </div>
+      <div class="row g-4 d-flex justify-content-center mt-5">
+        <img src="assets/img/img1.jpg" class="img-fluid" style="width: 80% !important; height: 20% !important;object-fit: contain;" alt="">
+      </div>
+
+      
+      
     </div>
   </div>
 
+  <div class="w-100" style="margin: 0; padding: 0;">
+    <img src="assets/img/img2.jpg" class="img-fluid d-block" style="width: 100vw; height: 630px !important;" alt="">
+  </div>
   <!-- Global Projects -->
   <!-- <div class="py-6 py-lg-8" id="projects">
     <div class="container">
@@ -354,6 +369,10 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <img src="assets/img/pccc.jpg" class="img-fluid" class="width: 50% !important" alt="">
+  </div>
 </div>
 <section class="py-6" style="background-color: #ffffff;">
   <div class="container">
@@ -470,8 +489,12 @@
                 <!-- <a href="#" class="btn btn-outline-dark">View Training Curriculum</a> -->
             </div>
         </div>
+        
     </div>
 </section>
+<div class="row p-1 m-0 border">
+  <img src="assets/img/isps.jpg" class="img-fluid" style="width: 100% !important;height: 600px !important; margin: 0 !important; padding: 0 !important;" alt="">
+</div>
 <style>
   :root {
     --primary: #005F8C;
@@ -486,12 +509,19 @@
     line-height: 1.6;
   }
   
-  .stampford-hero {
+  /* .stampford-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80') center/cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
-  
+   */
+.stampford-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), center/cover;
+    /* padding-top: 8rem;
+    padding-bottom: 8rem; */
+  }
+   
+   
   .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 0.5rem;
