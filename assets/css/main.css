@@ -532,6 +532,13 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 768px) {
+  #preloader img {
+    width: 80%;
+    height: auto;
+  }
+}
+
 #preloader:before {
   content: "";
   position: fixed;
