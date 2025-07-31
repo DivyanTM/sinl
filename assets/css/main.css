@@ -525,17 +525,23 @@ h6 {
   background: var(--background-color);
   transition: all 0.6s ease-out;
 }
+#preloader img{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  top: calc(60% - 20px);
+  left: calc(50% - 20px);
   border: 6px solid #ffffff;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   animation: animate-preloader 1.5s linear infinite;
 }
 
