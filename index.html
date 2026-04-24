@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -575,6 +574,315 @@
         </div>
       </div>
     </section>
+
+
+    <!-- Achivements
+    <section id="achivements">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  -->
+<style>
+  .maritime-section {
+    padding: 48px 0;
+    background: #f0f4f9;
+  }
+ 
+  .maritime-section .ms-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1b82d1;
+    display: block;
+    margin-bottom: 6px;
+  }
+ 
+  .maritime-section .ms-heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: #1a1a2e;
+    letter-spacing: -0.5px;
+    margin: 0 0 10px;
+  }
+ 
+  .maritime-section .ms-heading span {
+    color: #1b82d1;
+  }
+ 
+  .maritime-section .ms-subtitle {
+    color: #6b7280;
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Barlow', sans-serif;
+  }
+ 
+  /* Card */
+  .maritime-section .ms-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.38s ease, transform 0.38s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+ 
+  .maritime-section .ms-card:hover {
+    box-shadow: 0 16px 48px rgba(27, 130, 209, 0.18);
+    transform: translateY(-6px);
+  }
+ 
+  /* Image */
+  .maritime-section .ms-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+  }
+ 
+  @media (min-width: 576px) {
+    .maritime-section .ms-img-wrap { height: 240px; }
+  }
+  @media (min-width: 992px) {
+    .maritime-section .ms-img-wrap { height: 260px; }
+  }
+ 
+  .maritime-section .ms-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.55s ease;
+  }
+ 
+  .maritime-section .ms-card:hover .ms-img-wrap img {
+    transform: scale(1.07);
+  }
+ 
+  .maritime-section .ms-img-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 55%, rgba(10, 40, 80, 0.25) 100%);
+    pointer-events: none;
+  }
+ 
+ 
+ 
+  /* Card body */
+  .maritime-section .ms-body {
+    padding: 20px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-family: 'Barlow', sans-serif;
+  }
+ 
+  .maritime-section .ms-cat {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #1b82d1;
+    margin-bottom: 6px;
+  }
+ 
+  .maritime-section .ms-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1a1a2e;
+    margin: 0 0 10px;
+    line-height: 1.3;
+  }
+ 
+  .maritime-section .ms-divider {
+    width: 36px;
+    height: 3px;
+    background: #1b82d1;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    transition: width 0.35s ease;
+  }
+ 
+  .maritime-section .ms-card:hover .ms-divider {
+    width: 64px;
+  }
+ 
+  .maritime-section .ms-desc {
+    font-size: 0.88rem;
+    color: #6b7280;
+    line-height: 1.65;
+    flex: 1;
+    margin-bottom: 18px;
+  }
+ 
+  /* Read More Button */
+  .maritime-section .ms-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 1.5px solid #1b82d1;
+    color: #1b82d1;
+    background: transparent;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    align-self: flex-start;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .maritime-section .ms-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #1b82d1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 0;
+  }
+ 
+  .maritime-section .ms-btn span,
+  .maritime-section .ms-btn i {
+    position: relative;
+    z-index: 1;
+  }
+ 
+  .maritime-section .ms-btn:hover {
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(27, 130, 209, 0.3);
+  }
+ 
+  .maritime-section .ms-btn:hover::before {
+    transform: scaleX(1);
+  }
+ 
+  .maritime-section .ms-btn i {
+    transition: transform 0.3s ease;
+    font-size: 0.85rem;
+  }
+ 
+  .maritime-section .ms-btn:hover i {
+    transform: translateX(4px);
+  }
+</style>
+ 
+<!-- ========== SECTION START ========== -->
+<section class="maritime-section">
+  <div class="container-xl">
+ 
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="ms-heading utext">Key Operations & Achievements</h2>
+      <p class="ms-subtitle">Delivering world-class port operations, cargo management, and maritime security services globally.</p>
+    </div>
+ 
+    <!-- Row 1: 3 cards -->
+    <div class="row g-4">
+ 
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="ms-card w-100">
+          <div class="ms-img-wrap">
+            <img src="https://dailytrend.com.ng/wp-content/uploads/PHOTO-1-USCG-VISIT-TO-NIMASA--1536x1022.jpg" alt="Control Centre"/>
+ 
+          </div>
+          <div class="ms-body">
+            <div class="ms-cat">Operations</div>
+            <h3 class="ms-title">US Coast Guard Hail Nigeria’s Improvement on Port Security</h3>
+            <div class="ms-divider"></div>
+            <p class="ms-desc">Director General, Nigerian Maritime Administration and Safety Agency, NIMASA; Dr. Dayo Mobereola making a presentation to the Chief of International Port Security Operations, Mr. Bryan Ullmer after a visit to key port facilities in Lagos by the USCG team.</p>
+            <a href="https://dailytrend.com.ng/2026/04/18/us-coast-guard-hail-nigerias-improvement-on-port-security/" class="ms-btn"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="ms-card w-100">
+          <div class="ms-img-wrap">
+            <img src="https://leadership.ng/wp-content/uploads/2023/04/NIMASA-revenue.png"/>
+ 
+          </div>
+          <div class="ms-body">
+            <div class="ms-cat">ISPS Codes:</div>
+            <h3 class="ms-title">NIMASA Intensifies Efforts To Lift Entry Restrictions On Vessels From Nigerian Ports</h3>
+            <div class="ms-divider"></div>
+            <p class="ms-desc">The Nigerian Maritime Administration and Safety Agency (NIMASA) has stepped up efforts to address lingering port security gaps and secure the removal of entry restrictions on Nigerian-bound vessels, as it deepens collaboration with the United States Coast Guard (USCG).</p>
+            <a href="https://leadership.ng/isps-codes-nimasa-intensifies-efforts-to-lift-entry-restrictions-on-vessels-from-nigerian-ports/" class="ms-btn"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-sm-6 col-lg-4 d-flex">
+        <div class="ms-card w-100">
+          <div class="ms-img-wrap">
+            <img src="https://cdn.thenationonlineng.net/wp-content/uploads/2025/03/25060650/NIMASA-USCG-Pic-1-1536x1023-1-511x340.jpeg" alt="Port Security"/>
+ 
+          </div>
+          <div class="ms-body">
+            <div class="ms-cat">Business</div>
+            <h3 class="ms-title">U.S. Coast Guard lauds Nigeria on ports security</h3>
+            <div class="ms-divider"></div>
+            <p class="ms-desc">The United States Coast Guard has commended the Nigerian Maritime Administration and Safety Agency (NIMASA) for what it described as considerable progress in the implementation of the International Ships and Ports Facility Security (ISPS) Code.</p>
+            <a href="https://thenationonlineng.net/u-s-coast-guard-lauds-nigeria-on-ports-security/" class="ms-btn"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Row 2: 2 wider cards -->
+      <div class="col-12 col-sm-6 d-flex">
+        <div class="ms-card w-100">
+          <div class="ms-img-wrap">
+            <img src="https://cdn.guardian.ng/wp-content/uploads/2023/01/First..-1-1062x598.jpg" alt="Maritime Consulting"/>
+ 
+          </div>
+          <div class="ms-body">
+            <div class="ms-cat">port facilities</div>
+            <h3 class="ms-title">Nigeria’s terminals, port facilities compliant with ISPS implementation, says U.S.</h3>
+            <div class="ms-divider"></div>
+            <p class="ms-desc">The United States Coast Guard (USCG) has commended Nigeria’s terminals and port facilities for significant progress in implementing the International Ship and Port Facility Security (ISPS) Code.</p>
+            <a href="https://guardian.ng/business-services/maritime/nigerias-terminals-port-facilities-compliant-with-isps-implementation-says-u-s/" class="ms-btn" ><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-12 col-sm-6 d-flex">
+        <div class="ms-card w-100">
+          <div class="ms-img-wrap">
+            <img src="https://shipsandports.com.ng/wp-content/uploads/2025/03/20250324_164201.jpg" alt="Vessel Management"/>
+ 
+          </div>
+          <div class="ms-body">
+            <div class="ms-cat">Security Compliance</div>
+            <h3 class="ms-title">US Coast Guard Applauds Nigeria’s Progress in Port Security Compliance</h3>
+            <div class="ms-divider"></div>
+            <p class="ms-desc">The United States Coast Guard (USCG) has praised Nigeria for making significant strides in implementing the International Ships and Ports Facility Security (ISPS) Code.</p>
+            <a href="https://shipsandports.com.ng/us-coast-guard-applauds-nigerias-progress-in-port-security-compliance/" class="ms-btn"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+ 
+<!-- Bootstrap JS (skip if already loaded) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </section>
 
   <section id="certification" class="bg-dark text-center">
   <div class="container" data-aos="fade-up">
